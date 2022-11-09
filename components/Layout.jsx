@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import styles from "../styles/Layout.module.css";
+import styles from "./Layout.module.css";
 
 const menu = [
   { name: "Home", link: "/" },
@@ -17,21 +17,25 @@ const Layout = ({ children }) => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <header className={styles.header}>
-        <h4>RealEstate</h4>
-        <nav>
-          {menu.map((el, index) => (
-            <Link
-              className={`${styles.menuItem} ${
-                index === 0 && styles.activeMenu
-              }`}
-              key={index}
-              href={el.link}
-              passHref
-            >
-              {el.name}
-            </Link>
-          ))}
-        </nav>
+        <div className={`container ${styles.container}`}>
+          <h4>
+            RealEstate <span></span>
+          </h4>
+          <nav>
+            {menu.map((el, index) => (
+              <Link
+                className={`${styles.menuItem} ${
+                  index === 0 && styles.activeMenu
+                }`}
+                key={index}
+                href={el.link}
+                passHref
+              >
+                {el.name}
+              </Link>
+            ))}
+          </nav>
+        </div>
       </header>
       {/* <Box boxShadow='0 0 4px #dadada'></Box> */}
       <main className={styles.main}>{children}</main>

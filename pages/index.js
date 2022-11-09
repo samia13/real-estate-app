@@ -1,11 +1,12 @@
-// import { Property } from "../components";
+import { Hero } from "../components";
 
 export default function Home() {
   return (
     <div>
-      Home page
-      <br />
-      {/* <Property /> */}
+      <Hero />
+      <div className='container'>
+        <h3>this is a container</h3>
+      </div>
     </div>
   );
 }
