@@ -8,10 +8,6 @@ const Property = () => {
     <>
       <div className={styles.property}>
         <div className={styles.image}>
-          {/* <picture>
-            <source srcSet='images/hero.jpg' type='image/webp' />
-            <img src='images/hero.jpg' alt='' />
-          </picture> */}
           <div style={{ width: "100%", height: "250px", position: "relative" }}>
             <Image
               alt='Mountains'

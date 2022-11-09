@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { BiHeart } from "react-icons/bi";
+import { BiHeart, BiMenuAltRight } from "react-icons/bi";
 import styles from "./Layout.module.css";
 
 const menu = [
@@ -22,6 +22,7 @@ const Layout = ({ children }) => {
           <h4>
             RealEstate <span></span>
           </h4>
+          <BiMenuAltRight className={styles.hamburger} />
           <nav>
             {menu.map((el, index) => (
               <Link

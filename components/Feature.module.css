@@ -1,0 +1,20 @@
+.feature {
+  margin: 10px;
+  text-align: center;
+  flex-basis: 20%;
+}
+@media (max-width: 767px) {
+  .feature {
+    flex-basis: 80%;
+  }
+}
+.feature * {
+  color: white;
+}
+.feature svg {
+  font-size: 2.3em;
+}
+.feature p {
+  color: #dbd5f0;
+  font-size: 14px;
+}

@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
 }
 .header nav {
   display: flex;
@@ -20,6 +21,10 @@
   border-radius: 50%;
   background-color: #4834d4;
   display: inline-block;
+}
+.hamburger {
+  font-size: 20px;
+  display: none;
 }
 .menuItem {
   margin-right: 15px;
@@ -44,4 +49,12 @@
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   background-color: #f3effd;
+}
+@media (max-width: 991px) {
+  .hamburger {
+    display: block;
+  }
+  .header nav {
+    display: none;
+  }
 }
