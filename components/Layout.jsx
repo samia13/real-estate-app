@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import { BiHeart } from "react-icons/bi";
 import styles from "./Layout.module.css";
 
 const menu = [
@@ -41,7 +42,9 @@ const Layout = ({ children }) => {
       <main className={styles.main}>{children}</main>
 
       <footer className={styles.footer}>
-        <p>Made with love by samyscode</p>
+        <p>
+          Made with <BiHeart /> by samyscode
+        </p>
       </footer>
     </div>
   );
