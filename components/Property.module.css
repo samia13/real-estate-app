@@ -52,7 +52,11 @@
   padding: 0 15px;
   display: flex;
   align-items: center;
+  color: #66676f;
 }
 .features span:not(:last-child) {
   border-right: 1px solid #cccbcb;
+}
+.features span svg {
+  margin-right: 5px;
 }

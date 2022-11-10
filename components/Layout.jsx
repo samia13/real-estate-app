@@ -7,7 +7,8 @@ import styles from "./Layout.module.css";
 const menu = [
   { name: "Home", link: "/" },
   { name: "For Sale", link: "/for-sale" },
-  { name: "For Rent", link: "/for-rent" },
+  { name: "To Rent", link: "/to-rent" },
+  { name: "House Prices", link: "/house-prices" },
 ];
 const Layout = ({ children }) => {
   return (

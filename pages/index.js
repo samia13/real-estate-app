@@ -1,7 +1,8 @@
 import { Hero, Property, Feature } from "../components";
 import styles from "../styles/Home.module.css";
+import { baseUrl, fetchApi } from "../lib/api";
 
-export default function Home() {
+export default function Home({ popularProperties }) {
   return (
     <div>
       <Hero />
@@ -23,12 +24,25 @@ export default function Home() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           </div>
           <div className={styles.propertyGrid}>
-            {[1, 2, 3].map((el) => (
-              <Property />
+            {popularProperties.map((el) => (
+              <Property key={el.listing_id} property={el} />
             ))}
           </div>
         </div>
       </section>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const popularProperties = await fetchApi(`${baseUrl}/properties/list`, {
+    order_by: "view_count",
+    page_size: "6",
+  });
+
+  return {
+    props: {
+      popularProperties: popularProperties?.listing,
+    },
+  };
 }
