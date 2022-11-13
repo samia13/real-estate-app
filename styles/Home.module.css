@@ -38,3 +38,8 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
+
+.banners {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
