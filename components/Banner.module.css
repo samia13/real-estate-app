@@ -8,9 +8,14 @@
 .right-image {
   flex-direction: row-reverse;
 }
-/* .banner > div {
-  flex: 1;
-} */
+
+.imageContainer {
+  width: 50%;
+  height: 400px;
+  position: relative;
+  margin-right: 20px;
+  overflow: hidden;
+}
 .imageContainer::before {
   content: "";
   position: absolute;
@@ -43,19 +48,23 @@
   border-radius: 15px 0;
   transition: 0.3s;
 }
-.imageContainer:hover img {
-  transform: scale(1.4) rotate(17deg);
-}
+
 .imageContainer:hover::before,
 .imageContainer:hover::after {
   width: calc(100% - 43px);
   height: calc(100% - 43px);
 }
-
+@media (max-width: 767px) {
+  .imageContainer {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
 .detail p {
   margin-bottom: 20px;
 }
-.detail button {
+.detail a {
   padding: 10px 20px;
   outline: 0;
   border: 1px solid purple;

@@ -36,8 +36,7 @@
 }
 .activeMenu,
 .menuItem:hover {
-  background: #f3effd;
-  border-top: 2px solid #4834d4;
+  border-bottom: 2px solid #4834d4;
 }
 .main {
   min-height: calc(100vh - 149px);
