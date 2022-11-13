@@ -7,6 +7,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "lid.zoocdn.com",
       },
+      {
+        protocol: "https",
+        hostname: "st.zoocdn.com",
+      },
+      {
+        protocol: "https",
+        hostname: "lc.zoocdn.com",
+      },
     ],
   },
 };

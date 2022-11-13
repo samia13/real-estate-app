@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { BiMap, BiBed, BiBath, BiChair } from "react-icons/bi";
 import styles from "./Property.module.css";
 
@@ -9,8 +10,9 @@ const Property = ({ property }) => {
     num_bathrooms,
     num_bedrooms,
     displayable_address,
+    county,
     image_url,
-    price,
+    rental_prices,
     title,
     furnished_state,
   } = property;
@@ -30,11 +32,13 @@ const Property = ({ property }) => {
           <span>For {listing_status}</span>
         </div>
         <div className={styles.detail}>
-          <span className={styles.price}>${price}</span>
-          <h4>{title}</h4>
+          <span className={styles.price}>${rental_prices.per_month}</span>
+          <Link href={"/"}>
+            <h4>{title}</h4>
+          </Link>
           <p>
             <BiMap />
-            {displayable_address}
+            {displayable_address} | {county}
           </p>
           <div className={styles.features}>
             <span>

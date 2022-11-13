@@ -8,6 +8,10 @@ body {
   margin: 0;
   font-family: "Cairo", sans-serif;
 }
+input {
+  font-family: "Cairo", sans-serif;
+  outline: 0;
+}
 
 .container {
   padding-left: 15px;
@@ -73,4 +77,30 @@ p {
 button {
   outline: 0;
   cursor: pointer;
+}
+
+/* overiding slick slider style  */
+.slick-slider {
+  overflow: hidden;
+}
+svg.slick-prev,
+svg.slick-next {
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  color: #6d6d6d;
+}
+svg.slick-next {
+  right: 20px;
+}
+svg.slick-prev {
+  left: 20px;
+}
+svg.slick-prev:hover,
+svg.slick-prev:focus,
+svg.slick-next:hover,
+svg.slick-next:focus {
+  color: #6d6d6d;
+  outline: none;
+  background: white;
 }

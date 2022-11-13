@@ -1,0 +1,70 @@
+.propertyFlex {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.imageContainer {
+  height: 370px;
+  position: relative;
+}
+.imageContainer:focus-visible {
+  outline: 0;
+}
+.imageContainer img {
+  outline: 0;
+}
+.detail {
+  padding: 0 15px;
+}
+.agent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px 0 10px;
+  border-bottom: 1px solid #c5c4c4;
+}
+.agentImage {
+  width: 100px;
+  height: 40px;
+  position: relative;
+}
+.price {
+  color: #040320;
+  font-weight: 600;
+  font-size: 22px;
+}
+.features {
+  display: flex;
+}
+.features span {
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  color: #66676f;
+}
+.features span svg {
+  margin-right: 5px;
+}
+.detail h4 {
+  font-size: 19px;
+}
+.detail p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #6f6f6f;
+}
+.detail p svg {
+  margin-right: 5px;
+}
+@media (max-width: 767px) {
+  .detail,
+  .imageContainer {
+    flex-basis: 100%;
+  }
+  .detail {
+    padding-left: 15px;
+  }
+}

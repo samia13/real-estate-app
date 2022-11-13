@@ -37,7 +37,7 @@ export default function Home({ popularProperties }) {
             purpose='RENT A HOME'
             title='Rental homes for everyone'
             text='Explore from a variety of choices, homes, flats and more'
-            link=''
+            link='rent'
             direction='left-image'
             image='rent.jpg'
           />
@@ -46,7 +46,7 @@ export default function Home({ popularProperties }) {
             purpose='BUY A HOME'
             title='Find, Buy & Own Your Dream Home'
             text='Explore from a variety of choices, homes, flats and more'
-            link=''
+            link='sale'
             direction='right-image'
             image='sale.jpg'
           />
@@ -59,7 +59,7 @@ export default function Home({ popularProperties }) {
 export async function getStaticProps() {
   const popularProperties = await fetchApi(`${baseUrl}/properties/list`, {
     order_by: "view_count",
-    page_size: "6",
+    page_size: "3",
   });
 
   return {

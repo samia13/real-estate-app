@@ -1,0 +1,25 @@
+.filters {
+  background: white;
+  box-shadow: 0 0 4px #dddddd;
+}
+
+.filter {
+  padding: 15px 20px;
+}
+.filter select,
+.filter input {
+  outline: 0;
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+  height: 40px;
+  width: 100%;
+}
+.filters button {
+  padding: 10px 20px;
+  background: #4834d4;
+  color: white;
+  border: 1px solid #4834d4;
+  margin: 0 20px 20px;
+  width: calc(100% - 40px);
+  font-size: 16px;
+}
